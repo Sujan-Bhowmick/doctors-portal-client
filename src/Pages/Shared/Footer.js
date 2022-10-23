@@ -1,5 +1,5 @@
 import React from 'react';
-import footer from '../../../assets/images/footer.png'
+import footer from '../../assets/images/footer.png'
 
 const Footer = () => {
     return (
@@ -30,7 +30,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='my-10 text-center'>
-                <p>Copyright © 2022 - All right reserved by ACME Industries Ltd</p>
+                <p>Copyright © 2022 - All right reserved</p>
             </div>
         </footer>
     );
