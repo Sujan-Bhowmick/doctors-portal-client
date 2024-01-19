@@ -8,20 +8,20 @@ const Services = () => {
     const services = [
         {
             _id: 1,
-            name: 'Fluoride Treatment',
-            description: '', 
+            name: 'Health Care',
+            description: 'Primary care for adults and children, gynecology, podiatry, cardiology, HIV expertise', 
             img: fluoride
         },
         {
             _id: 2,
-            name: 'Cavity Filling',
-            description: '', 
+            name: 'Therapy',
+            description: 'Individual & group sessions, couples & family counseling, recovery & drug use support, art therapy, psychiatry', 
             img: cavity
         },
         {
             _id: 3,
-            name: 'Teeth Whitening',
-            description: '',
+            name: 'Dental',
+            description: 'Routine & deep cleanings, root canals, bridges, crowns, extractions, fillings, removable dentures',
             img: whitening
         },
     ]

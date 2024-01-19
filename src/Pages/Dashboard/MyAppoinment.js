@@ -1,7 +1,7 @@
 import { signOut } from 'firebase/auth';
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 
 const MyAppoinment = () => {
@@ -37,7 +37,6 @@ const MyAppoinment = () => {
       <h3 className='text-center'>My Appoinment: {appointments.length}</h3>
       <div className="overflow-x-auto">
         <table className="table w-full">
-
           <thead>
             <tr>
               <th></th>
@@ -45,19 +44,26 @@ const MyAppoinment = () => {
               <th>Date</th>
               <th>Time</th>
               <th>Treatment</th>
+              <th>Payment</th>
             </tr>
           </thead>
           <tbody>
             {
-              appointments.map((a, index) => <tr>
+              appointments.map((a, index) => <tr key={a._id}>
                 <th>{index + 1}</th>
                 <td>{a.patientName}</td>
                 <td>{a.date}</td>
                 <td>{a.slot}</td>
                 <td>{a.treatment}</td>
+                <td>
+                  {(a.price && !a.paid) && <Link to= {`/dashboard/payment/${a._id}`}><button className='btn btn-xs btn-success'>Pay</button></Link>}
+                  {(a.price && a.paid) && <div>
+                    <p><span className='text-success'>Paid</span></p>
+                    <p>Transaction id: <span className='text-success'>{a.transactionId}</span> </p>
+                    </div>}
+                  </td>
               </tr>)
             }
-
           </tbody>
         </table>
       </div>

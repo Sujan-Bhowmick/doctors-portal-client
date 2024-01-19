@@ -1,6 +1,5 @@
 
 import { Route, Routes } from 'react-router-dom';
-// import './App.css';
 import About from './Pages/About/About';
 import Appointment from './Pages/Appoinment/Appointment';
 import Home from './Pages/Home/Home/Home';
@@ -15,7 +14,12 @@ import MyAppoinment from './Pages/Dashboard/MyAppoinment';
 import MyReview from './Pages/Dashboard/MyReview';
 import MyHistory from './Pages/Dashboard/MyHistory';
 import Users from './Pages/Dashboard/Users';
+import AdDoctor from './Pages/Dashboard/AdDoctor';
 import RequireAdmin from './Pages/Login/RequireAdmin';
+import ManageDoctor from './Pages/Dashboard/ManageDoctor';
+import Payment from './Pages/Dashboard/Payment';
+import Contacts from './Pages/Home/Contact/Contacts';
+import Testimonials from './Pages/Home/Testimonials/Testimonials';
 
 function App() {
   return (
@@ -25,6 +29,8 @@ function App() {
         <Route path='/' element={<Home></Home>}> </Route>
         <Route path='/home' element={<Home></Home>}> </Route>
         <Route path='/about' element={<About></About>}></Route>
+        <Route path='/contact' element={<Contacts></Contacts>}></Route>
+        <Route path='/reviews' element={<Testimonials></Testimonials>}></Route>
         <Route path='/appointment' element={
           <RequireAuth>
             <Appointment></Appointment>
@@ -36,7 +42,10 @@ function App() {
             <Route index element = {<MyAppoinment></MyAppoinment>}></Route>
             <Route path='review' element = {<MyReview></MyReview>}></Route>
             <Route path='history' element = {<MyHistory></MyHistory>}></Route>
+            <Route path='payment/:id' element = {<Payment></Payment>}></Route>
             <Route path='users' element = {<RequireAdmin><Users></Users></RequireAdmin>}></Route>
+            <Route path='addDoctor' element = {<RequireAdmin><AdDoctor></AdDoctor></RequireAdmin>}></Route>
+            <Route path='manageDoctor' element = {<RequireAdmin><ManageDoctor></ManageDoctor></RequireAdmin>}></Route>
           </Route>
 
         <Route path='/login' element={<Login></Login>}></Route>
