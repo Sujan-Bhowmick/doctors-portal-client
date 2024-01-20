@@ -20,6 +20,7 @@ import ManageDoctor from './Pages/Dashboard/ManageDoctor';
 import Payment from './Pages/Dashboard/Payment';
 import Contacts from './Pages/Home/Contact/Contacts';
 import Testimonials from './Pages/Home/Testimonials/Testimonials';
+import Doctors from './Pages/Home/Doctor/Doctors';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path='/' element={<Home></Home>}> </Route>
         <Route path='/home' element={<Home></Home>}> </Route>
         <Route path='/about' element={<About></About>}></Route>
+        <Route path='/doctors' element={<Doctors></Doctors>}></Route>
         <Route path='/contact' element={<Contacts></Contacts>}></Route>
         <Route path='/reviews' element={<Testimonials></Testimonials>}></Route>
         <Route path='/appointment' element={

@@ -16,6 +16,7 @@ const Navbar = () => {
     const menuItems = <>
         <li><Link to = "/home">Home </Link></li>
         <li><Link to = "/appointment">Appointment </Link></li>
+        <li><Link to = "/doctors">Doctors </Link></li>
         <li><Link to = "/reviews">Reviews </Link></li>
         <li><Link to = "/contact">Contact </Link></li>
         <li><Link to = "/about">About </Link></li>
@@ -37,7 +38,10 @@ const Navbar = () => {
                         {menuItems}
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">Doctors Portal</a>
+                <Link to= "/">
+                <a className="btn btn-ghost normal-case text-xl">Doctor's Care</a>
+                </Link>
+               
             </div>
             <div className="navbar-center hidden md:flex">
                 <ul className="menu menu-horizontal p-0">

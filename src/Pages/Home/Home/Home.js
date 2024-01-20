@@ -5,6 +5,8 @@ import Contact from '../Contact/Contact';
 import Info from '../Info/Info';
 import MakeAppointment from '../MakeAppointment/MakeAppointment';
 import Services from '../Services/Services';
+import Chooses from '../Choose/Chooses';
+import Provider from '../provider/Provider';
 
 
 const Home = () => {
@@ -13,7 +15,9 @@ const Home = () => {
             <Banner></Banner>
             <Info></Info>
             <Services></Services>
+            <Chooses></Chooses>
             <MakeAppointment></MakeAppointment>
+            <Provider></Provider>
             <Contact></Contact>
             <Footer></Footer>
         </div>
