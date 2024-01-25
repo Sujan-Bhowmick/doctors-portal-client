@@ -4,6 +4,7 @@ import people1 from '../../../assets/images/people1.png'
 import people2 from '../../../assets/images/people2.png'
 import people3 from '../../../assets/images/people3.png'
 import Review from '../Review/Review';
+import Footer from '../../Shared/Footer';
 // import Reviews from '../Review/Reviews';
 
 const Testimonials = () => {
@@ -31,7 +32,7 @@ const Testimonials = () => {
         },
     ]
     return (
-        <section className='my-24'>
+        <section className='mt-24'>
             <div className='flex justify-between'> 
                 <div>
                     <h4 className="text-xl text-primary font-bold">Testimonials</h4>
@@ -55,6 +56,9 @@ const Testimonials = () => {
                     ></Reviews>)
                 } */}
             </div>
+            <div  className = "pt-20 ">
+           <Footer></Footer>
+           </div>
         </section>
     );
 };

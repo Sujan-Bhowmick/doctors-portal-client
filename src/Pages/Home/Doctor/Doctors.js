@@ -6,6 +6,7 @@ import doctor3 from '../../../assets/doctors/doctor3.jpg'
 import doctor4 from '../../../assets/doctors/doctor4.png'
 import doctor5 from '../../../assets/doctors/doctor5.jpg'
 import doctor6 from '../../../assets/doctors/doctor6.png'
+import Footer from '../../Shared/Footer';
 
 const Doctors = () => {
     const doctors = [
@@ -25,7 +26,7 @@ const Doctors = () => {
         {
             _id: 3,
             name: 'Dr Shila',
-            description: 'MBBS, BCS (Health), MD (Nephrology), MACP (USA), CCD(BIRDEM)',
+            description: 'MBBS, BCS (Health), MD (Nephrology), MACP (USA), ',
             img: doctor3
         },
         {
@@ -48,7 +49,7 @@ const Doctors = () => {
         },
     ]
     return (
-        <div className='my-28 '>
+        <div className='mt-28 '>
            <div className='text-center text-xl font-bold uppercase'>
            <h2 className='text-primary'>Our Doctors</h2>
             {/* <h2 className='text-2xl'>Services WE Provide</h2> */}
@@ -60,6 +61,9 @@ const Doctors = () => {
                         doctor= {doctor}
                     ></Doctor>)
                 }
+           </div>
+           <div  className = "pt-20 ">
+           <Footer></Footer>
            </div>
         </div>
     );

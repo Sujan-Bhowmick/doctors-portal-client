@@ -13,7 +13,7 @@ const Doctor = ({ doctor }) => {
           <h2 className="card-title">{doctor.name}</h2>
           <p>{doctor?.description}</p>
           <Link to= "/appointment">
-          <PrimaryButton>Appointment</PrimaryButton>
+          <PrimaryButton>Book Appointment</PrimaryButton>
           </Link>
           
         </div>
