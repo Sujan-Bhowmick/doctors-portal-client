@@ -7,8 +7,8 @@ const Footer = () => {
         <footer style={{
             background: `url(${footer})`,
             backgroundSize: 'cover'
-        }}className=" p-10 ">
-            <div className='footer'>
+        }}className=" p-10  ">
+            <div className='footer w-full'>
                 <div>
                     <span className="footer-title">Doctors Care</span>
                     <span className='w-48'>Booking your desired Doctors is not far now. Doctors Care made online consultation from Doctors very easy & convenient. It is a freelancing platform for Doctors and on the other hand, it is easy for patients to avail services.</span>
