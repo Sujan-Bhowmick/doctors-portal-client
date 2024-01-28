@@ -7,13 +7,13 @@ const Contact = () => {
       style={{
         background: `url(${appointment})`,
       }}
-      className="text-center"
+      className="text-center p-5"
     >
-      <div className="my-5">
+      <div className="my-3">
         <h3 className="text-xl text-primary font-bold">Contact Us</h3>
         <h1 className="text-3xl text-white">Stay Connected With Us</h1>
       </div>
-      <div className="inline-block ">
+      <div className="inline-block">
         <input
           type="text"
           placeholder="Email Address"

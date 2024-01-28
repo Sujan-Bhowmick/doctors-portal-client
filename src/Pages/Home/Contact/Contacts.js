@@ -7,7 +7,7 @@ const Contacts = () => {
   return (
     <div className="pt-24">
       <div
-        className="hero-content flex-col lg:flex-row rounded"
+        className="hero-content flex-col lg:flex-row rounded p-10"
         style={{
           background: `url(${appointment})`,
         }}

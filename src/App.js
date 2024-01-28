@@ -21,6 +21,7 @@ import Payment from './Pages/Dashboard/Payment';
 import Contacts from './Pages/Home/Contact/Contacts';
 import Testimonials from './Pages/Home/Testimonials/Testimonials';
 import Doctors from './Pages/Home/Doctor/Doctors';
+import Blogs from './Pages/Blogs/Blogs';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route path='/doctors' element={<Doctors></Doctors>}></Route>
         <Route path='/contact' element={<Contacts></Contacts>}></Route>
         <Route path='/reviews' element={<Testimonials></Testimonials>}></Route>
+        <Route path= '/blog' element= {<Blogs></Blogs>}></Route>
         <Route path='/appointment' element={
           <RequireAuth>
             <Appointment></Appointment>
