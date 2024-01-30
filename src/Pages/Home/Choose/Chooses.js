@@ -31,12 +31,12 @@ const Chooses = () => {
     return (
         <div className='my-28 '>
            <div className='text-center text-xl font-bold uppercase'>
-           <h2 className='text-primary'>Why Choose Doctor's Care</h2>
+           <h2 className='text-primary my-10'>Why Choose Doctor's Care</h2>
             {/* <h2 className='text-2xl'>Services WE Provide</h2> */}
            </div>
            <div className='grid sm:grid-cols-2 md:grid-cols-4 gap-5'>
                 {
-                    chooses.map(choose => <Choose
+                    chooses.map(choose =><Choose
                         key={choose._id}
                         choose= {choose}
                     ></Choose>)

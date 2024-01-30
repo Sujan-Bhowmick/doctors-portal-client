@@ -3,6 +3,7 @@ import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import auth from '../../firebase.init';
+import logo1 from "../../assets/images/logo4.png"
 
 const Navbar = () => {
      
@@ -39,7 +40,8 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <Link to= "/">
-                <a className="btn btn-ghost normal-case text-xl">Doctor's Care</a>
+                    <img src={logo1}  className = " w-16 h-16" alt="" />
+                {/* <a className="btn btn-ghost normal-case text-xl">Doctor's Care</a> */}
                 </Link>
                
             </div>

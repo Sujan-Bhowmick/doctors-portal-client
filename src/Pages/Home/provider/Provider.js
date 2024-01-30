@@ -12,7 +12,7 @@ const Provider = () => {
             className="max-w-sm rounded-lg shadow-2xl"
             alt=""
           />
-          <div>
+          <div className="">
             <h1 className="text-3xl font-bold">
               We’re Working Together for You
             </h1>
@@ -22,7 +22,7 @@ const Provider = () => {
               whole-person care, specific to your needs.
             </p>
             <Link to="/doctors">
-              <PrimaryButton>See our full list of provider</PrimaryButton>
+            <button className="bg-primary p-3 rounded text-white hover:bg-black" >See our full list of provider</button>
             </Link>
           </div>
         </div>
